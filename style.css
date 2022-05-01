@@ -1,0 +1,314 @@
+* {
+    background-color: #333;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h2 {
+    position: absolute;
+    background-color: #5b7553;
+    left: 20px;
+}
+
+button{
+    font-weight: 900;
+    font-size: 20px;
+}
+span{
+    background-color:#8eb897;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.352);
+    font-weight: 900;
+}
+
+/* WRAPPERS */
+
+.app-wrapper{
+    position: relative;
+    margin: 30px auto;
+    width: 300px;
+    height: 550px;
+    background-color: #5b7553;
+}
+
+.action-wrapper{
+    position: absolute;
+    width: 300px;
+    height: 280px;
+    background-color: #c3e8bd;
+    bottom: 0;
+    border-top-left-radius: 50%;
+
+}
+
+.balance-wrapper{
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    width: 260px;
+    height: 150px;
+    background-color:#8eb897;
+    left: 20px;
+    top: 80px;
+}
+
+
+.page-title-wrapper{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background-color: #c3e8bd;
+    right: 0;
+    top: 10px;
+}
+
+.item-income-wrapper{
+    width: 300px;
+    height: 230px;
+    background-color: #c3e8bd;
+    position: absolute;
+    border-top-left-radius: 80px;
+    bottom: 0px;
+    left: 0;
+}
+
+.item-expense-wrapper{
+    width: 300px;
+    height: 230px;
+    background-color: #c3e8bd;
+    position: absolute;
+    border-top-left-radius: 80px;
+    bottom: 0px;
+    left: 0;
+}
+
+.item-all-wrapper{
+    width: 300px;
+    height: 230px;
+    background-color: #c3e8bd;
+    position: absolute;
+    border-top-left-radius: 80px;
+    bottom: 0px;
+    left: 0;
+}
+
+.input-income-wrapper{
+    width: 290px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #c3e8bd;
+    z-index: 10;
+}
+
+.input-expense-wrapper{
+    width: 290px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #c3e8bd;
+    z-index: 10;
+}
+
+/* TEXT ELEMENTS */
+
+#balance-text{
+    font-size: 20px;
+    font-weight: 900;
+    background-color:#8eb897;
+    margin: 0;
+}
+
+#income-text{
+    position: absolute;
+    font-weight: 800;
+    background-color:#8eb897;
+    right:19px;
+    top:0px;
+}
+
+#outcome-text{
+    position: absolute;
+    font-weight: 800;
+    background-color:#8eb897;
+    right: 10px;
+    top: 50px;
+}
+
+/* MONEY AMOUNT */
+
+#total-balance{
+    background-color:#8eb897;
+}
+
+#total-income{
+    background-color:#8eb897;
+    font-size: 18px;
+}
+
+#total-outcome{
+    background-color:#8eb897;
+    color:red;
+    font-size: 18px;
+}
+
+/* CIRCLE */
+
+#circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 80px;
+    top: 10px;
+    background-color:#8eb897;
+}
+
+canvas {
+    position: absolute;
+    top:20px;
+    left: 5px;
+    background-color:#8eb897;
+}
+
+/* BUTTONS */
+
+#tab1{
+    border:none;
+    background-color: #c3e8bd;
+}
+
+#tab2{
+    border:none;
+    background-color: #c3e8bd;
+}
+
+#tab3{
+    border:none;
+    background-color: #c3e8bd;
+}
+
+#add-expense-button:hover{
+    opacity: 0.8;
+}
+
+#add-income-button:hover{
+    opacity: 0.8;
+}
+
+/* INPUTS */
+
+#input-income-title{
+    width: 120px;
+    font-size: 20px;
+    border: none;
+    background-color: #5b7553;
+}
+
+#input-income-amount{
+    width: 70px;
+    font-size: 20px;
+    border:none;
+    background-color: #5b7553;
+}
+
+#add-income-button{
+    position: absolute;
+    right: 10px;
+    border: none;
+    background-color: #5b7553;
+}
+
+#input-expense-title{
+    width: 120px;
+    font-size: 20px;
+    border: none;
+    background-color: #5b7553;
+}
+
+#input-expense-amount{
+    width: 70px;
+    font-size: 20px;
+    border:none;
+    background-color: #5b7553;
+}
+
+#add-expense-button{
+    position: absolute;
+    right: 10px;
+    border: none;
+    background-color: #5b7553;
+}
+
+/* HIDE ACTIVE  */
+
+.hide {
+    opacity: 0;
+}
+
+.active {
+    color:#1e3317;
+}
+
+/* DYNAMIC TEMPLATE */
+
+.item{
+    background-color: #c3e8bd;
+    font-weight: 900;
+    color:rgb(198, 35, 35)
+    
+}
+
+#income {
+    color: black;
+}
+
+.li {
+    list-style-type: none;
+    background-color: #c3e8bd;
+}
+
+.list {
+    top: -10px;
+    padding: 0;
+    position: absolute;
+    width: 230px;
+    right: 15px;
+    font-size: 18px;
+    background-color: #c3e8bd;
+    z-index: 10;
+}
+
+#edit-button {
+    width: 32px;
+    height: 20px;
+    float: right;
+    margin-right: 10px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(134, 128, 128);
+    margin-top: 3px;
+
+}
+
+#edit-button:hover{
+    opacity: 0.9;
+}
+
+#delete-button {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 10px;
+    background-color: rgb(198, 35, 35);
+    border-radius: 5px;
+    border: none;
+    margin-top: 3px;
+}
+
+#delete-button:hover{
+    opacity: 0.9;
+}

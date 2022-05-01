@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-wrapper">
+        <h2>budgetTracker$</h2>
+        <div class="balance-wrapper">
+            <p id="balance-text">Balance<br><span id="total-balance">$0</span></p>
+           
+                <p id="income-text">Income<br><span id="total-income">$0</span></p>
+                <div id="circle"></div>
+                <p id="outcome-text">Outcome<br><span id="total-outcome">$0</span></p>
+       
+        </div>
+        <div class="action-wrapper">
+            <div class="page-title-wrapper">
+                <button type="button" id="tab1">Expenses</button>
+                <button type="button" id="tab2">Income</button>
+                <button type="button" id="tab3" class="active">All</button>
+            </div>
+            <div class="item-expense-wrapper hide" id="expenseList">
+                <ul class="list">
+                  
+                </ul>
+                
+                <div class="input-expense-wrapper">
+                    <input type="text" id="input-expense-title" placeholder="Title">
+                    <input type="number" id="input-expense-amount" placeholder="$0">
+                    <button type="button" id="add-expense-button">+</button>
+                </div>
+                </div>
+
+            <div class="item-income-wrapper hide" id="incomeList">
+                <ul class="list">
+                  
+                </ul>
+            <div class="input-income-wrapper">
+                <input type="text" id="input-income-title" placeholder="Title">
+                <input type="number" id="input-income-amount" placeholder="$0">
+                <button type="button" id="add-income-button">+</button>
+            </div>
+            </div>
+
+            <div class="item-all-wrapper" id="allList">
+                <ul class="list">
+                  
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="circle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
